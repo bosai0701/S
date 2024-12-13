@@ -97,13 +97,13 @@
             "tiles": [this.url],
             "tileSize": 256,
             "maxzoom": 10,
-            "minzoom": 3.5
+            "minzoom": 5
           });
           map.addLayer({
             "id": "jma_hrpns",
             "type": "raster",
             "source": key,
-            "minzoom": 3.5,
+            "minzoom": 5,
             "maxzoom": 18,
             "paint": {
               "raster-opacity": 0.8,
@@ -190,7 +190,7 @@
     const map = new maplibregl.Map({
       container: "map",
       center: [134.5, 34.5],
-      zoom: 3.5,
+      zoom: 5,
       style: style,
       pitch: 0,
       bearing: 0,
@@ -199,7 +199,7 @@
     });
 
     map.on('load', () => {
-      map.setMinZoom(3.5);
+      map.setMinZoom(5);
       map.setMaxZoom(12);
 
       map.on('rotate', () => {
